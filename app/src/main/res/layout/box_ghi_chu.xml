@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Danh sách ghi chú:"
+        android:textSize="20sp"
+        android:textColor="@color/black"/>
+
+    <ListView
+        android:layout_weight="4"
+        android:id="@+id/danhsach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:layout_marginBottom="10dp"
+        android:inputType="text"
+        android:id="@+id/ghichu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="themvaodanhsach"
+            android:text="Nhập"
+            android:id="@+id/btn_ghi_chu"
+            android:layout_marginRight="20sp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:id="@+id/btn_xoa"
+            android:onClick="themvaodanhsach"
+            android:layout_marginLeft="20sp"/>
+    </LinearLayout>
+
+</LinearLayout>
